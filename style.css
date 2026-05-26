@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {   
+    font-size: 62.5%;
+    font-family: sans-serif;
+
+    scroll-behavior: smooth;    
+    scrollbar-width: none;
+    overflow-x: hidden;
+} 
+
+:root {
+    --text-main: rgb(19, 18, 18); 
+    --gray-purple: #8467f7;
+    --blue-purple: #322bf5ee;
+    --white-cream: #f1f1f1fb;   
+    --ambar: #f3e740;               /* Fondo gris muy claro (casi blanco) */
+
+    --tea-green: #CAFFDE;
+    --sky-aqua: #25C5E9;
+    --dark-cyan: #238689;
+    --ink-black: #021225;
+    --gray-light: #f4f4f4;
+    --gray-medium: #707070;
+    
+    /* Sombras para tus componentes */
+    --shadow-a: 0 4px 10px rgba(0, 0, 0, 0.466);
+    --shadow-b: 0px 0px 15px rgba(0, 0, 0, 0.548);
+    --text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.685);
+}
+
+body {   
+    background: linear-gradient(var(--gray-purple) 10%, var(--blue-purple) 95%);    
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;  
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+.main-container {
+    max-width: 1600px;     
+    margin: 0 auto;        
+    width: 100%;           
+}
+
+.section {
+    border-radius: 4rem;
+    margin: 0 auto;
+    padding: 4rem;
+    width: 95%;
+}
+
+.introduccion {
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--shadow-a);
+    color: var(--white-cream);
+    padding: 11.4rem 4rem;
+    margin: 3rem auto;
+    margin-bottom: 0rem;
+    text-align: center;
+}
+
+.introduccion p {
+    color: var(--ambar);
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 1.2rem 0;
+    letter-spacing: 0.5rem;
+}
+
+.introduccion h1 {
+    font-size: 10rem;
+    margin: 3.5rem 0 4.5rem 0;
+}
+
+.introduccion h2 {
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+span {
+    color: var(--ambar);
+}
+
+.propiedades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 4rem;
+}
+
+.article {
+    border: 2px solid rgba(0, 0, 0, 0.233);
+    box-shadow: var(--shadow-a);
+    padding: 2.5rem 3rem;
+    border-radius: 4rem;
+    min-height: 40rem;
+    width: 92%;
+}
+
+.article h2 {
+    text-shadow: var(--text-shadow);
+    color: var(--white-cream);
+    margin-bottom: 2rem;
+    font-size: 3.4rem;
+}
+
+.article .contain {
+    height: 30rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.article .textContain{
+    min-height: 4rem;
+    padding: 1rem;
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article .textContain p {
+    text-shadow: var(--text-shadow);
+    color: var(--white-cream);
+    min-height: 6rem;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.article .textContain img {
+    box-shadow: var(--shadow-a);
+    border-radius: 3rem;
+    margin: 4rem auto;
+    max-width: 40rem;
+}
+
+.article .ejemploContain {
+    box-shadow: var(--shadow-b);
+    border-radius: 2.5rem;
+    margin: 0 1.5rem;
+    padding: 1rem;
+    width: 44%;
+
+
+    background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.158) 0%, 
+    rgba(240, 240, 240, 0.185) 50%, 
+    rgba(200, 200, 200, 0.103) 100%);
+}
+
+.article .ejemploContain div{
+    box-shadow: var(--shadow-b);
+    background: var(--ambar);
+    border-radius: 2rem;
+    margin: 7rem auto;
+    height: 15rem;
+    width: 15rem;
+}
+
+.article .ejemploContain .background {
+    background: yellow;
+}
+
+.article .ejemploContain .border{
+    border: 1rem solid black;
+}
+
+.article .ejemploContain .color, .font-size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article .ejemploContain .color p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.article .ejemploContain .color{
+    color: black
+}
+
+.article .ejemploContain .font-size p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.article .ejemploContain .font-size{
+    font-size: 2.5rem;
+}
+
+.thanks {
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--shadow-a);
+    color: var(--white-cream);
+    padding: 11.4rem 4rem;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.thanks p {
+    text-shadow: var(--text-shadow);
+    color: var(--white-cream);
+    font-weight: bolder;
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+    line-height: 6rem;
+}
